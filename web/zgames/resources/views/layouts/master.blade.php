@@ -1,30 +1,27 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token()}}">
-    <!-- Bootstrap CSS -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <title>Registro de juegos y consolas</title>
+    <title>Gestion de medidas electricas</title>
   </head>
   <body>
    <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="{{ asset('img/logo.png')}}"
-            class="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="{{ route('home')}}">agregar consolas</a>
-              <a class="nav-link" href="{{ route('registrar_juegos')}}">Registrar Juegos</a>
-              <a class="nav-link" href="{{ route('ver_consola')}}">Ver Consolas</a>
-              <a class="nav-link" href="{{ route('ver_juegos')}}">Ver Juegos</a>
+              <a class="nav-link active" aria-current="page" href="{{ route('home')}}">home</a>
+              <a class="nav-link" href="{{ route('registrar_lectura')}}">Registrar lectura</a>
+              <a class="nav-link" href="{{ route('mediciones_existentes')}}">Ver mediciones</a>
+              
             </div>
           </div>
         </div>

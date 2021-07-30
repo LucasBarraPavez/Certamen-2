@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   db:
-    container_name: db-zgamesusm
+    container_name: db-certamen2usm
     image: mysql:8.0
     ports:
       - "3306:3306"
@@ -10,13 +10,13 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 123456
-      MYSQL_DATABASE: zgamesusm_db
+      MYSQL_DATABASE: certamen2usm_db
       MYSQL_USER: zgames
       MYSQL_PASSWORD: 123456
     networks:
-      - net-zgamesusm
+      - net-certamen2usm
   web:
-    container_name: web-zgamesusm
+    container_name: web-certamen2usm
     depends_on:
       - db
     ports:
@@ -29,7 +29,7 @@ services:
       context: .
       dockerfile: Dockerfile
     networks:
-      - net-zgamesusm
+      - net-certamen2usm
 networks:
-  net-zgamesusm:
+  net-certamen2usm:
     
